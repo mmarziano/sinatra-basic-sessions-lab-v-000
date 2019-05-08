@@ -6,4 +6,7 @@ class App < Sinatra::Base
     enable :sessions
     set :session_secret, "applesauce"
   end
+  
+  get '/' do 
+    erb :'index'
 end
