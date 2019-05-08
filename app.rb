@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   post '/checkout' do 
     binding.pry
-    @session = session.merge(params)
+    @session = session.update(params)
     
   end 
 end
